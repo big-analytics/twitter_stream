@@ -1,0 +1,5 @@
+#run tweet retrieval
+/cygdrive/c/'Program Files/logstash-2.2.2'/bin/logstash.bat -f twitter_input.conf  --debug
+
+#delete all tweets
+curl -XDELETE 'http://localhost:9200/logstash-2014.07.25'
